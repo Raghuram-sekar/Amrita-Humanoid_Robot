@@ -1,0 +1,98 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+gitagpt/
+gitaenv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Audio Files
+*.wav
+*.mp3
+*.flac
+*.aac
+temp_audio_*
+
+# Model Files (large files that should be downloaded separately)
+*.onnx
+*.bin
+*.safetensors
+models/*.onnx
+models/*.bin
+
+# 3D Model Files (optional - uncomment to exclude large STL files)
+# *.stl
+# 3D Files/**/*.stl
+
+# Data Files (may be regenerated)
+data/gita*.index
+data/*.faiss
+*.index
+
+# Logs
+*.log
+logs/
+
+# Configuration (contains sensitive info like IPs)
+client/local_config.py
+server/local_config.py
+config.local.py
+
+# Temporary Files
+tmp/
+temp/
+.tmp
+
+# Environment Variables
+.env
+.env.local
+
+# System
+*.orig
+*.rej
+
+# AI Model Cache
+.cache/
+cache/
+.transformers_cache/
+.sentence_transformers_cache/
