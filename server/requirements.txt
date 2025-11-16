@@ -1,0 +1,14 @@
+flask
+numpy
+openai-whisper
+sentence-transformers
+faiss-cpu
+pandas
+scipy
+pyttsx3
+piper-tts
+soundfile
+transformers
+comtypes
+pywin32
+ollama
