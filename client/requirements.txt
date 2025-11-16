@@ -1,0 +1,6 @@
+sounddevice
+pyaudio
+pyserial
+requests
+numpy
+wave
