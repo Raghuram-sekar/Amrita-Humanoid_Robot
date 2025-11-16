@@ -1,0 +1,237 @@
+<?xml version="1.0" ?>
+<robot name="URDF" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find URDF_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find URDF_description)/urdf/URDF.trans" />
+<xacro:include filename="$(find URDF_description)/urdf/URDF.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-1.3196556870805245 -1.3805730534645329 0.44074374311005493" rpy="0 0 0"/>
+    <mass value="7.591243000763349"/>
+    <inertia ixx="1.742891" iyy="2.273551" izz="2.912979" ixy="0.075511" iyz="0.799342" ixz="0.111529"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BS-KRA_v3_1">
+  <inertial>
+    <origin xyz="-0.030024820072221736 -0.21518898814224863 -0.3178325848521334" rpy="0 0 0"/>
+    <mass value="6475.269869496425"/>
+    <inertia ixx="1909.82297" iyy="2384.550516" izz="2956.581572" ixy="67.551876" iyz="715.090448" ixz="99.773672"/>
+  </inertial>
+  <visual>
+    <origin xyz="1.267444 1.006368 -0.993442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/BS-KRA_v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="1.267444 1.006368 -0.993442" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/BS-KRA_v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BS-RG-KRA_v2_1">
+  <inertial>
+    <origin xyz="-0.004962983344193317 -0.035070156501187943 -0.052520697074060596" rpy="0 0 0"/>
+    <mass value="658.9188487180676"/>
+    <inertia ixx="197.293154" iyy="256.922278" izz="328.574812" ixy="8.460013" iyz="89.54379" ixz="12.513771"/>
+  </inertial>
+  <visual>
+    <origin xyz="1.256526 0.928118 -1.109017" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/BS-RG-KRA_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="1.256526 0.928118 -1.109017" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/BS-RG-KRA_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="AX1_v4_1">
+  <inertial>
+    <origin xyz="-0.08276224098649654 -0.34566100312699954 -0.6048720403676564" rpy="0 0 0"/>
+    <mass value="1623.0350888696548"/>
+    <inertia ixx="96.865068" iyy="117.658285" izz="142.713426" ixy="2.958794" iyz="31.321188" ixz="4.370118"/>
+  </inertial>
+  <visual>
+    <origin xyz="1.16733 0.536345 -1.781996" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/AX1_v4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="1.16733 0.536345 -1.781996" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/AX1_v4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="AX2_1__v1_1">
+  <inertial>
+    <origin xyz="-0.1345817360616055 0.16554970040002337 -0.18598209218488093" rpy="0 0 0"/>
+    <mass value="2146.046871913772"/>
+    <inertia ixx="223.896233" iyy="186.413028" izz="182.820731" ixy="23.137455" iyz="2.831989" ixz="-22.545315"/>
+  </inertial>
+  <visual>
+    <origin xyz="1.014089 0.70848 -2.011967" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/AX2_1__v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="1.014089 0.70848 -2.011967" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/AX2_1__v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="AX2-TUBE_v4_1">
+  <inertial>
+    <origin xyz="1.391217382151523 -2.743369127112331 -0.8791888498150486" rpy="0 0 0"/>
+    <mass value="1183.752111872634"/>
+    <inertia ixx="142.661104" iyy="151.618647" izz="37.170841" ixy="-5.047251" iyz="-16.274077" ixz="-36.198655"/>
+  </inertial>
+  <visual>
+    <origin xyz="2.229129 -2.114094 -3.459212" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/AX2-TUBE_v4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="2.229129 -2.114094 -3.459212" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/AX2-TUBE_v4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="AX3_1__v2_1">
+  <inertial>
+    <origin xyz="-0.17190280373460748 -0.1289561644725729 -0.6480493778624874" rpy="0 0 0"/>
+    <mass value="287.7142844008731"/>
+    <inertia ixx="7.390281" iyy="6.958942" izz="12.085978" ixy="-0.015414" iyz="0.881384" ixz="1.703895"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.477783 0.408595 -3.876681" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/AX3_1__v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.477783 0.408595 -3.876681" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/AX3_1__v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="AX4_v3_1">
+  <inertial>
+    <origin xyz="0.33017962263528255 -0.4129632684226951 -0.06169356384164182" rpy="0 0 0"/>
+    <mass value="1879.0951283214438"/>
+    <inertia ixx="150.777336" iyy="151.055884" izz="154.135338" ixy="22.806924" iyz="-10.58841" ixz="-1.247971"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.823066 -0.052243 -3.935232" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/AX4_v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.823066 -0.052243 -3.935232" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/AX4_v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RT1-KRA_v1_1">
+  <inertial>
+    <origin xyz="-0.06510013160269257 0.054791240181746095 -0.01623894557738126" rpy="0 0 0"/>
+    <mass value="171.65677580325058"/>
+    <inertia ixx="5.298116" iyy="5.056122" izz="4.519313" ixy="-0.699491" iyz="-0.179458" ixz="0.204749"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.871176 -0.092712 -3.923249" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/RT1-KRA_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.871176 -0.092712 -3.923249" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/RT1-KRA_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="AX4-TUBE_v2_1">
+  <inertial>
+    <origin xyz="0.41345045091525323 -0.34778485534448117 0.1029779078750046" rpy="0 0 0"/>
+    <mass value="830.7843597647784"/>
+    <inertia ixx="46.38743" iyy="59.179073" izz="87.417781" ixy="36.796485" iyz="9.16485" ixz="-10.895263"/>
+  </inertial>
+  <visual>
+    <origin xyz="1.698077 -0.788282 -3.717294" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/AX4-TUBE_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="1.698077 -0.788282 -3.717294" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/AX4-TUBE_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RT2-KRA_v1_1">
+  <inertial>
+    <origin xyz="1.870974 -0.93372 -3.674231" rpy="0 0 0"/>
+    <mass value="0.0"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="1.870974 -0.93372 -3.674231" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/RT2-KRA_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="1.870974 -0.93372 -3.674231" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/RT2-KRA_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
